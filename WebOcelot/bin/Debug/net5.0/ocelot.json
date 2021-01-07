@@ -1,0 +1,23 @@
+{
+
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/v1/User/ValidUser",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "127.0.0.1",
+          "Port": 5001
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/User/ValidUser",
+      "UpstreamHttpMethod": [
+        "POST"
+      ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "RequestIdKey": "OcRequestId",
+    "BaseUrl": "https://localhost:5000"
+  }
+}
